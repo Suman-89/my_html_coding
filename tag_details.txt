@@ -1,0 +1,2 @@
+audio tag - control property must be written on audio tag otherwise browser could not be able to 
+show the audio file.

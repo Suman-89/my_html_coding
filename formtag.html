@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <form action="" method="">
+        <label>Name</label><input type="text" name="fname" value="" placeholder="please fill name" /><br><br>
+        <label>Password</label><input type="password" name="pass" /><br><br>
+        <label>Gender</label><input type="radio" name="gender" id="male" /><label for="male">Male</label><input type="radio" name="gender" id="female" /><label for="female">Female</label><br><br>
+        <label>Hobbies</label><input type="checkbox" name="hobby" id="music" /><label for="music">Music</label><input type="checkbox" name="hobby" id="sports" /><label for="sports">Sports</label><br><br>
+        <label>Message</label><textarea rows="8" cols="20"></textarea><br><br>
+        <label>Country</label>
+        <select name="" size="3" multiple>
+            <option id="ind" selected>India</option>
+            <option id="srl">Sri Lanka</option>
+            <option id="jpn">Japan</option>
+            <option id="mal">Malaysia</option>
+            <option id="indn">Indonesia</option>
+            <option id="mynmr">Mayanmar</option>
+            <option id="npl">Nepal</option>
+        </select><br><br>
+        <label>Places</label>
+        <select>
+            <optgroup label="india">
+                <option>Delhi</option>
+                <option>Kolkata</option>
+                <option>Mumbai</option>
+                <option>Chennai</option>
+                <option>Pune</option>
+            </optgroup>
+            <optgroup label="srilanka">
+                <option>Anuradhapuram</option>
+                <option>xpuram</option>
+                <option>ypuram</option>
+                <option>zpuram</option>
+                <option>apuram</option>
+            </optgroup>
+        </select><br><br>
+        <label>Places</label>
+        <input list="city"/>
+        <datalist id="city">
+            <option value="Delhi"></option>
+            <option value="Kolkata"></option>
+            <option value="Mumbai"></option>
+            <option value="Chennai"></option>
+            <option value="Pune"></option>
+            <option value="Dehradun"></option>
+        </datalist>       
+    </form>
+</body>
+</html>

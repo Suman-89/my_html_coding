@@ -1,0 +1,21 @@
+body{
+    background-image: "Avengers.jpg";
+}
+h5#world {
+    color: #009766;
+}
+.inner_tag {
+    border: 1px solid #000;
+    padding: 25px 27px 20px 21px;
+    margin: 19px 20px 20px 18px;
+}
+    .para_tag {
+    color: #000;
+    font-size: 18px;
+    font-weight: 900;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Times New Roman', Times, serif;
+    }
