@@ -8,6 +8,8 @@
 </head>
 <body>
     <form action="" method="">
+        <fieldset>
+            <legend>Enter Personal Details</legend>
         <label>Name</label><input type="text" name="fname" value="" placeholder="please fill name" /><br><br>
         <label>Password</label><input type="password" name="pass" /><br><br>
         <label>Gender</label><input type="radio" name="gender" id="male" /><label for="male">Male</label><input type="radio" name="gender" id="female" /><label for="female">Female</label><br><br>
@@ -51,7 +53,13 @@
             <option value="Dehradun"></option>
         </datalist><br><br>   
         <label>Choose picture</label>
-        <input type="file" accept="image/*" name="" />    
+        <input type="file" accept="image/*" name="" /><br><br>
+        <input type="submit" value="save"/> 
+        <input type="reset"/>   
+        <br><br>
+        <input type="image" src="assets/images/save.png" width="80px" alt="submit button"/>
+        <input type="image" src="assets/images/3reset.png" width="80px" height="50px" alt="reset button"/>
+        </fieldset>
     </form>
 </body>
 </html>

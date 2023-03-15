@@ -1,0 +1,14 @@
+html5 new input types
+
+color 
+number
+range
+date
+datetime-local
+month
+week
+time
+email
+search
+tel
+url
