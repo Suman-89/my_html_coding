@@ -1,0 +1,22 @@
+.box{
+    margin: 0 auto 0;
+    width: 600px;
+    background: linear-gradient(red,yellow);
+    border-radius: 10px;
+}
+.form-control{
+    margin: 0 auto;
+    width: 95%;
+}
+.form-label{
+    padding-left: 17px;
+}
+/* .col-md-3{
+    width: 95%;
+} */
+.row{
+    margin-left: -4px;
+}
+.form-check-input{
+    padding-left: -6px;
+}
