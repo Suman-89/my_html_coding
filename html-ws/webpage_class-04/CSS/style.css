@@ -1,0 +1,69 @@
+/* ****************************Common class **************************** */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1170px;
+    padding: 0px 15px;
+    width: 100%;
+}
+section,
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    flex-direction: column;
+}
+/* *********** Header (navbar)************** */
+.navbar {
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container .logo{
+    width: 15%;
+}
+.navbar .container .logo img{
+    width: 90%;
+}
+.navbar .container .nav_menu ul{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.navbar .container .nav_menu ul li{
+    padding: 0px 10px;
+    text-transform: capitalize;
+}
+.navbar .container .nav_menu ul li a{
+    color: black;
+}
+.navbar .container .search{
+    text-transform: capitalize;
+}
+.navbar .container .search i{
+    padding-left: 15px;
+}
+/* ***************** Background ******************* */
+.banner{
+    height: 850px;
+    background: url(../IMAGE/history.jpg);
+}
