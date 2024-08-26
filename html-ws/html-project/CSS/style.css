@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+  /* max-width: 1170px; */
+  padding: 0px 15px;
+}
+.nav_menu ul {
+  display: flex;
+}
+.nav_menu ul li {
+  list-style: none;
+}
+.nav_menu ul li a {
+  text-decoration: none;
+}
