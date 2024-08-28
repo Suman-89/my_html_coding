@@ -1,37 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: "Poppins", sans-serif;
+
+body {
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
-.container{
+
+.container {
   max-width: 1170px;
   padding: 0px 15px;
   width: 100%;
 }
+
 section,
-.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section{
-    padding: 50px 0;
+
+section {
+  padding: 50px 0;
 }
-ul li{
-    list-style: none;
+
+ul li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+
+a {
+  text-decoration: none;
 }
+
 /* ********************* navbar ************************* */
-.navbar{
+.navbar {
   width: 100%;
   height: auto;
   padding: 0px 50px;
@@ -41,16 +49,93 @@ a{
   /* background-color: lightcoral; */
   position: fixed;
   z-index: 100;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+
 }
-.navbar .container{
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 10px;
 }
-.navbar .container .nav_menu ul{
+
+.navbar .container .nav_menu ul {
   display: flex;
 }
-.navbar .container .nav_menu ul li{
+
+.navbar .container .nav_menu ul li {
   padding: 10px;
+}
+
+.navbar .container .nav_menu ul li a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navbar .container .login a i {
+  color: #ffffff;
+}
+
+/* ============================ banner ======================== */
+.banner {
+  height: 850px;
+  background: url("../IMG/html/images/banner-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner .container .row h1 {
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.banner .container .row .text1 {
+  color: #ffffff;
+}
+
+.banner .container .row .text2 {
+  color: rgb(4, 181, 122);
+}
+
+.banner .container .button ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .banner .container .button{
+  width: 175px;
+} */
+.banner .container .button li{
+  height: 64px;
+}
+.banner .container .button a {
+  font-size: 18px;
+  width: 175px;
+  text-align: center;
+  /* height: 64px; */
+  float: left;
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  /* border: 1px solid #ffffff; */
+  padding: 12px 12px;
+  /* margin: 20px; */
+  border-radius: 5px;
+  /* margin-top: 20px; */
+  background: rgb(4, 181, 122);
+}
+
+.banner .container .button #about {
+  background: #f1f1f1;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.banner .container .button #about:hover {
+  background: rgb(4, 181, 122);
+  color: #f1f1f1;
 }
