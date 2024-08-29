@@ -85,12 +85,17 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
+.banner .container .row{
+  flex-direction: column;
+}
 .banner .container .row h1 {
   text-transform: capitalize;
   font-size: 50px;
 }
-
+.banner .container .row p{
+  color: #f1f1f1;
+  padding: 20px;
+}
 .banner .container .row .text1 {
   color: #ffffff;
 }
@@ -100,8 +105,10 @@ a {
 }
 
 .banner .container .button ul {
+  /* margin-top: 20px; */
+  padding-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
