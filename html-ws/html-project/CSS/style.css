@@ -169,7 +169,7 @@ a {
   display: flex;
 }
 .service .container .row .text-heading h2{
-  font-family: inherit;
+  font-family: "Poppins";
   font-size: 40px;
   font-weight: 800;
   text-transform: capitalize;
