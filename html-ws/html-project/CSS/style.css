@@ -53,6 +53,14 @@ a {
 .flex-col{
   flex-direction: column;
 }
+.border{
+  width: 80px;
+  height: 10px;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  background:rgb(4, 181, 122) ;
+
+}
 
 /* ********************* navbar ************************* */
 .navbar {
@@ -162,7 +170,7 @@ a {
   background: rgb(4, 181, 122);
   color: #f1f1f1;
 }
-/* ************* Services ************* */
+/* ************************************* Services ******************************************** */
 .service .container .row .text-heading{
   width: 100%;
   /* border: 1px solid red; */
@@ -237,4 +245,495 @@ figure{
 .service .container .row .service-content .serv-card .card-content .flex-btn{
   color: #fefefd;
   background-color: rgb(4, 181, 122);
+}
+
+/* ********************* How it work ******************** */
+.about .container .row .heading{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+.about .container .row .heading h2{
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: capitalize;
+  padding: 30px 20px;
+  margin: 0 20px;
+  /* float: left; */
+}
+.about .container .row .heading .heading-header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .container .row .work-element{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .container .row .work-element .serv-card{
+  width: 80%;
+  /* border: 1px solid red; */
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 18px;
+  background: #dddada;
+  font-family: 'Poppins', sans-serif;
+  transition: all ease 1s;
+  /* font-size: 20px; */
+}
+.about .container .row .work-element .serv-card:hover{
+  background: rgb(4, 181, 122);
+  color: #ffffff;
+}
+/* .about .container .row .work-element #flex-card{
+  transition: all ease 0.5s;
+} */
+figure{
+  display: flex;
+  justify-content: center;
+}
+.about .container .row .work-element .serv-card img{
+  width: auto;
+
+}
+.about .container .row .work-element .serv-card .card-content h3{
+  /* border: 1px solid blue; */
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+.about .container .row .work-element .serv-card .card-content p{
+  text-align: center;
+}
+/* .about .container .row .work-element .serv-card .card-content .button{
+
+} */
+/* .about .container .row .work-element .serv-card .card-content a{
+
+} */
+/* .about .container .row .work-element .serv-card .card-content a:hover{
+
+} */
+.about .container .row .work-element .serv-card .card-content .flex-btn{
+  color: #fefefd;
+  background-color: rgb(4, 181, 122);
+}
+.about .container a{
+  width: 15%;
+  float: left;
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #fefefd;
+  text-transform: uppercase;
+  background-color: #2d2c2c;
+  padding: 15px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 58px auto;
+  transition: all ease 0.5s;
+}
+.about .container  a:hover{
+  color: #fefefd;
+  background-color: rgb(4, 181, 122);
+}
+.about .container .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+}
+#create-wallet{
+  background: rgb(4, 181, 122);
+  color: #fffcfc;
+}
+/* ******************** Feature ************************** */
+.feature{
+  background: url("../IMG/html/images/features-bg.png");
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* margin: 30px 0; */
+}
+.feature .container .row .heading{
+  /* width: auto; */
+  color: #ffffff;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  /* margin: 0 18px; */
+  flex-direction: column;
+  font-family: "poppins";
+  font-size: larger;
+  padding: 0 0;
+}
+.feature .container .row .heading h2{
+  color: rgb(4, 181, 122);
+  font-weight: 800;
+}
+.feature .container .row .feature-content{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature .container .row .feature-content .serv-card{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-right: 30px;
+  /* background: #dddada; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  /* border: 1px solid red; */
+  /* padding: 0 10px; */
+
+  /* letter-spacing: 2; */
+}
+.feature .container .row .feature-content .serv-card .icon{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.feature .container .row .feature-content .serv-card .icon span{
+  margin: 25px;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.feature .container .row .feature-content .serv-card .card-content{
+  /* margin: 0 20px; */
+  width: auto;
+}
+.feature .container .row .feature-content .serv-card .card-content h3{
+  color: #ffffff;
+  font-weight: 400;
+}
+.feature .container .row .feature-content .serv-card .card-content p{
+  color: #ffffff;
+  
+}
+/* ***************************** btn-button *********************************/
+.btn-button .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+}
+
+.btn-button .button a{
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #fefefd;
+  text-transform: uppercase;
+  background-color: rgb(4, 181, 122);
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+.btn-button .button a:hover{
+  color: #fefefd;
+  background-color: #2d2c2c;
+}
+/* ********************************** Blog *********************************** */
+.blog .container .row .heading{
+  width: 100%;
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog .container .row .heading h2{
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: capitalize;
+  padding: 30px 20px;
+  margin: 0 20px;
+  /* float: left; */
+}
+.blog .container .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .container .row .blog-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .container .row .blog-content .serv-card{
+  text-align: center;
+  margin: 0 18px;
+  position: relative;
+  font-family: "poppins";
+}
+.blog .container .row .blog-content .serv-card h3{
+  text-transform: uppercase;
+  font-size: larger;
+  color: #2d2c2c;
+}
+.blog .container .row .blog-content .serv-card .other-blog{
+  position: relative;
+  top: -20px;
+  z-index: 1;
+}
+.blog .container .row .blog-content .serv-card .other-blog ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .container .row .blog-content .serv-card .other-blog ul li{
+  background: #02a763;
+  margin-left: 5px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.blog .container .row .blog-content .serv-card .other-blog ul li:hover{
+  box-shadow: 0px 2px 8px #888888;
+}
+.blog .container .row .blog-content .serv-card .team{
+  border: 1px solid rgb(207, 205, 205);
+  /* margin: 0 18px; */
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 45px 40px;
+}
+/* ******************************* Request callback ************************************* */
+.request{
+   background: #02a763;
+}
+.request .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.request .container .row .form{
+  /* border: 1px solid blue; */
+  padding: 25px;
+  margin: 0 25px;
+}
+.request .container .row .form .heading{
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px;
+  margin-left: 20px;
+}
+.request .container .row .form .heading h2{
+  font-weight: 800;
+}
+.request .container .row .form{
+  width: 700px;
+}
+.request .container .row .form .form-content{
+  margin: 20px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* width: 200px; */
+}
+.request .container .row .form .form-content .message{
+  width: 100%;
+  height: 150px;
+}
+.username,.useremail, .userphone, .subject, .message{
+  height: 65px;
+  border-radius: 10px;
+  border:none;
+}
+.username,.useremail, .userphone, .subject {
+  width: 100%;
+  margin: 5px 0;
+  margin-right: 10px;
+}
+.request .container .row .coin .row-coin img{
+  /* border: 1px solid blue; */
+  width: 350px;
+}
+.request .container .row .coin .row-coin{
+ /* padding: 56px; */
+ margin-top: 90px;
+}
+.request .container .row .form .button{
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.request .container .row .form .button a{
+  width: 35%;
+  height: auto;
+  float: left;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 800;
+  color: #fefefd;
+  text-transform: uppercase;
+  background-color: #252525;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+.request .container .row .form .button a:hover{
+  background-color: #fefefd;
+  color: #252525;
+  font-family: "poppins";
+}
+
+/* ************************* Client feedback info ******************************/
+.client .container .row .heading{
+  width: 100%;
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.client .container .row .heading h2{
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0 20px;
+}
+.client .container .row .heading p{
+  font-family: "Poppins";
+}
+.client .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client .container .row .client-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.client .container .row .client-info h3{
+  font-family: "Poppins";
+  font-size: 20px;
+}
+.client .container .row .client-info p{
+  font-family: "Poppins";
+  text-align: center;
+  margin: 10px 0;
+  width: 975px;
+  font-size: 17px;
+
+}
+.client .container .row .dots{
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client .container .row .dots hr{
+  height: 20px;
+  width: 20px;
+  background: #02a763;
+  border: none;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.client .container .row .dots #dot_e{
+  background: #252525;
+}
+
+/* ****************************** Footer ********************************* */
+.footer{
+  background: #252525;
+}
+.footer .container .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer .container .row .col{
+  margin: 0 10px;
+  color: #ffffff;
+  font-family: "poppins";
+}
+.footer .container .row .col .footer_menu_text{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.footer .container .row .col .footer_menu{
+  width: 100%;
+}
+.footer .container .row .col .footer_menu ul li{
+  font-size: 16px;
+}
+.footer .container .row .col .footer_menu ul li a {
+  /* text-decoration: none; */
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer .container .row .col .footer_menu ul li a:hover{
+  color: #02a763;
+}
+.footer .container .row .col .form_group{
+  margin-bottom: 1rem;
+}
+.footer .container .row .col .form_group .update_mail{
+  width: 100%;
+  color: #3b3b3b;
+  height: 55px;
+  font-size: 18px;
+  padding: 10px 20px 0px 20px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  border: 0px;
+}
+.footer .container .row .col .form_group .form_bt{
+  width: 70px;
+  float: left;
+  padding-top: 30px;
+}
+.footer .container .row .col .form_group .form_bt a{
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 0px;
+  background-color: #02a763;
+  text-align: center;
+  text-transform: uppercase;
+
 }
