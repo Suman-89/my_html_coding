@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
 
@@ -23,7 +23,7 @@ body {
   /* justify-content: center; */
   /* align-items: center; */
 }
-.heading{
+.heading {
   height: 20%;
   width: 100%;
   padding-bottom: 30px;
@@ -50,16 +50,15 @@ ul li {
 a {
   text-decoration: none;
 }
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
-.border{
+.border {
   width: 80px;
   height: 10px;
   border-radius: 10px;
   /* margin-top: 20px; */
-  background:rgb(4, 181, 122) ;
-
+  background: rgb(4, 181, 122);
 }
 
 /* ********************* navbar ************************* */
@@ -74,7 +73,6 @@ a {
   position: fixed;
   z-index: 100;
   /* border: 1px solid red; */
-
 }
 
 .navbar .container {
@@ -109,14 +107,14 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.banner .container .row{
+.banner .container .row {
   flex-direction: column;
 }
 .banner .container .row h1 {
   text-transform: capitalize;
   font-size: 50px;
 }
-.banner .container .row p{
+.banner .container .row p {
   color: #f1f1f1;
   /* padding: 20px; */
 }
@@ -139,7 +137,7 @@ a {
 /* .banner .container .button{
   width: 175px;
 } */
-.banner .container .button li{
+.banner .container .button li {
   height: 64px;
 }
 .banner .container .button a {
@@ -170,44 +168,77 @@ a {
   background: rgb(4, 181, 122);
   color: #f1f1f1;
 }
+/* ************************************* Arrow Button ***************************************** */
+.arrow_btn{
+  position: relative;
+  z-index: 1;
+  top: -30px;
+}
+.arrow_btn ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow_btn ul li{
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #02a763;
+  box-shadow: 0px 0px 20px 0px #dedede;
+  margin: 0 5px;
+}
+#arrow_right{
+  background: #ffffff;
+}
+#arrow_right:hover{
+  background: #02a763;
+  color: #ffffff;
+}
 /* ************************************* Services ******************************************** */
-.service .container .row .text-heading{
+.service .container .row .text-heading {
   width: 100%;
   /* border: 1px solid red; */
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.service .container .row .text-heading h2{
+.service .container .row .text-heading .border{
+  margin-top: -5px;
+}
+.service .container .row .text-heading h2 {
   font-family: "Poppins";
   font-size: 40px;
   font-weight: 800;
   text-transform: capitalize;
   padding: 30px 20px;
-  margin: 0 auto;
+  margin: 0 10px;
   /* float: left; */
 }
-.service .container .row .service-content{
+.service .container .row .service-content {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.service .container .row .service-content .serv-card{
+.service .container .row .service-content .serv-card {
   width: 30%;
   /* border: 2px solid #000; */
   padding: 10px;
   position: relative;
   overflow: hidden;
 }
-figure{
+figure {
   display: flex;
   justify-content: center;
 }
-.service .container .row .service-content .serv-card img{
+.service .container .row .service-content .serv-card img {
   width: auto;
-
 }
-.service .container .row .service-content .serv-card .card-content h3{
+.service .container .row .service-content .serv-card .card-content h3 {
   /* border: 1px solid blue; */
   padding: 20px 10px;
   font-size: 20px;
@@ -215,16 +246,16 @@ figure{
   text-align: center;
   text-transform: capitalize;
 }
-.service .container .row .service-content .serv-card .card-content p{
+.service .container .row .service-content .serv-card .card-content p {
   text-align: center;
 }
-.service .container .row .service-content .serv-card .card-content .button{
+.service .container .row .service-content .serv-card .card-content .button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 5px;
 }
-.service .container .row .service-content .serv-card .card-content a{
+.service .container .row .service-content .serv-card .card-content a {
   width: 58%;
   float: left;
   font-size: 18px;
@@ -238,24 +269,24 @@ figure{
   margin: auto;
   transition: all ease 1s;
 }
-.service .container .row .service-content .serv-card .card-content a:hover{
+.service .container .row .service-content .serv-card .card-content a:hover {
   color: #fefefd;
   background-color: rgb(4, 181, 122);
 }
-.service .container .row .service-content .serv-card .card-content .flex-btn{
+.service .container .row .service-content .serv-card .card-content .flex-btn {
   color: #fefefd;
   background-color: rgb(4, 181, 122);
 }
 
 /* ********************* How it work ******************** */
-.about .container .row .heading{
+.about .container .row .heading {
   width: 100%;
   display: flex;
   flex-direction: column;
   /* justify-content: center;
   align-items: center; */
 }
-.about .container .row .heading h2{
+.about .container .row .heading h2 {
   font-family: "Poppins";
   font-size: 40px;
   font-weight: 800;
@@ -264,20 +295,20 @@ figure{
   margin: 0 20px;
   /* float: left; */
 }
-.about .container .row .heading .heading-header{
+.about .container .row .heading .heading-header {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about .container .row .work-element{
+.about .container .row .work-element {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about .container .row .work-element .serv-card{
+.about .container .row .work-element .serv-card {
   width: 80%;
   /* border: 1px solid red; */
   height: 250px;
@@ -287,26 +318,25 @@ figure{
   align-items: center;
   margin: 18px;
   background: #dddada;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: all ease 1s;
   /* font-size: 20px; */
 }
-.about .container .row .work-element .serv-card:hover{
+.about .container .row .work-element .serv-card:hover {
   background: rgb(4, 181, 122);
   color: #ffffff;
 }
 /* .about .container .row .work-element #flex-card{
   transition: all ease 0.5s;
 } */
-figure{
+figure {
   display: flex;
   justify-content: center;
 }
-.about .container .row .work-element .serv-card img{
+.about .container .row .work-element .serv-card img {
   width: auto;
-
 }
-.about .container .row .work-element .serv-card .card-content h3{
+.about .container .row .work-element .serv-card .card-content h3 {
   /* border: 1px solid blue; */
   padding: 20px 10px;
   font-size: 20px;
@@ -314,7 +344,7 @@ figure{
   text-align: center;
   text-transform: capitalize;
 }
-.about .container .row .work-element .serv-card .card-content p{
+.about .container .row .work-element .serv-card .card-content p {
   text-align: center;
 }
 /* .about .container .row .work-element .serv-card .card-content .button{
@@ -326,11 +356,11 @@ figure{
 /* .about .container .row .work-element .serv-card .card-content a:hover{
 
 } */
-.about .container .row .work-element .serv-card .card-content .flex-btn{
+.about .container .row .work-element .serv-card .card-content .flex-btn {
   color: #fefefd;
   background-color: rgb(4, 181, 122);
 }
-.about .container a{
+.about .container a {
   width: 15%;
   float: left;
   font-size: 18px;
@@ -344,22 +374,22 @@ figure{
   margin: 58px auto;
   transition: all ease 0.5s;
 }
-.about .container  a:hover{
+.about .container a:hover {
   color: #fefefd;
   background-color: rgb(4, 181, 122);
 }
-.about .container .button{
+.about .container .button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 5px;
 }
-#create-wallet{
+#create-wallet {
   background: rgb(4, 181, 122);
   color: #fffcfc;
 }
 /* ******************** Feature ************************** */
-.feature{
+.feature {
   background: url("../IMG/html/images/features-bg.png");
   height: 500px;
   background-size: cover;
@@ -367,7 +397,7 @@ figure{
   background-repeat: no-repeat;
   /* margin: 30px 0; */
 }
-.feature .container .row .heading{
+.feature .container .row .heading {
   /* width: auto; */
   color: #ffffff;
   display: flex;
@@ -379,18 +409,18 @@ figure{
   font-size: larger;
   padding: 0 0;
 }
-.feature .container .row .heading h2{
+.feature .container .row .heading h2 {
   color: rgb(4, 181, 122);
   font-weight: 800;
 }
-.feature .container .row .feature-content{
+.feature .container .row .feature-content {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.feature .container .row .feature-content .serv-card{
+.feature .container .row .feature-content .serv-card {
   width: 80%;
   height: auto;
   display: flex;
@@ -399,46 +429,45 @@ figure{
   align-items: start;
   margin-right: 30px;
   /* background: #dddada; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   /* border: 1px solid red; */
   /* padding: 0 10px; */
 
   /* letter-spacing: 2; */
 }
-.feature .container .row .feature-content .serv-card .icon{
+.feature .container .row .feature-content .serv-card .icon {
   width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.feature .container .row .feature-content .serv-card .icon span{
+.feature .container .row .feature-content .serv-card .icon span {
   margin: 25px;
   font-size: 30px;
   color: #ffffff;
   font-weight: 700;
 }
-.feature .container .row .feature-content .serv-card .card-content{
+.feature .container .row .feature-content .serv-card .card-content {
   /* margin: 0 20px; */
   width: auto;
 }
-.feature .container .row .feature-content .serv-card .card-content h3{
+.feature .container .row .feature-content .serv-card .card-content h3 {
   color: #ffffff;
   font-weight: 400;
 }
-.feature .container .row .feature-content .serv-card .card-content p{
+.feature .container .row .feature-content .serv-card .card-content p {
   color: #ffffff;
-  
 }
 /* ***************************** btn-button *********************************/
-.btn-button .button{
+.btn-button .button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 5px;
 }
 
-.btn-button .button a{
+.btn-button .button a {
   width: 100%;
   float: left;
   font-size: 18px;
@@ -451,12 +480,12 @@ figure{
   text-align: center;
   transition: all ease 0.5s;
 }
-.btn-button .button a:hover{
+.btn-button .button a:hover {
   color: #fefefd;
   background-color: #2d2c2c;
 }
 /* ********************************** Blog *********************************** */
-.blog .container .row .heading{
+.blog .container .row .heading {
   width: 100%;
   display: flex;
   width: 100%;
@@ -465,7 +494,7 @@ figure{
   align-items: center;
 }
 
-.blog .container .row .heading h2{
+.blog .container .row .heading h2 {
   font-family: "Poppins";
   font-size: 40px;
   font-weight: 800;
@@ -474,38 +503,38 @@ figure{
   margin: 0 20px;
   /* float: left; */
 }
-.blog .container .row{
+.blog .container .row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.blog .container .row .blog-content{
+.blog .container .row .blog-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.blog .container .row .blog-content .serv-card{
+.blog .container .row .blog-content .serv-card {
   text-align: center;
   margin: 0 18px;
   position: relative;
   font-family: "poppins";
 }
-.blog .container .row .blog-content .serv-card h3{
+.blog .container .row .blog-content .serv-card h3 {
   text-transform: uppercase;
   font-size: larger;
   color: #2d2c2c;
 }
-.blog .container .row .blog-content .serv-card .other-blog{
+.blog .container .row .blog-content .serv-card .other-blog {
   position: relative;
   top: -20px;
   z-index: 1;
 }
-.blog .container .row .blog-content .serv-card .other-blog ul{
+.blog .container .row .blog-content .serv-card .other-blog ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.blog .container .row .blog-content .serv-card .other-blog ul li{
+.blog .container .row .blog-content .serv-card .other-blog ul li {
   background: #02a763;
   margin-left: 5px;
   height: 45px;
@@ -516,10 +545,10 @@ figure{
   border-radius: 50%;
   color: #ffffff;
 }
-.blog .container .row .blog-content .serv-card .other-blog ul li:hover{
+.blog .container .row .blog-content .serv-card .other-blog ul li:hover {
   box-shadow: 0px 2px 8px #888888;
 }
-.blog .container .row .blog-content .serv-card .team{
+.blog .container .row .blog-content .serv-card .team {
   border: 1px solid rgb(207, 205, 205);
   /* margin: 0 18px; */
   width: 100%;
@@ -528,8 +557,8 @@ figure{
   padding: 45px 40px;
 }
 /* ******************************* Request callback ************************************* */
-.request{
-   background: #02a763;
+.request {
+  background: #02a763;
 }
 .request .container .row {
   display: flex;
@@ -537,59 +566,66 @@ figure{
   align-items: center;
   /* border: 1px solid red; */
 }
-.request .container .row .form{
+.request .container .row .form {
   /* border: 1px solid blue; */
   padding: 25px;
   margin: 0 25px;
 }
-.request .container .row .form .heading{
+.request .container .row .form .heading {
   text-align: left;
   color: #ffffff;
   font-size: 28px;
   margin-left: 20px;
 }
-.request .container .row .form .heading h2{
+.request .container .row .form .heading h2 {
   font-weight: 800;
 }
-.request .container .row .form{
+.request .container .row .form {
   width: 700px;
 }
-.request .container .row .form .form-content{
+.request .container .row .form .form-content {
   margin: 20px 20px;
   display: flex;
   justify-content: left;
   align-items: center;
   /* width: 200px; */
 }
-.request .container .row .form .form-content .message{
+.request .container .row .form .form-content .message {
   width: 100%;
   height: 150px;
 }
-.username,.useremail, .userphone, .subject, .message{
+.username,
+.useremail,
+.userphone,
+.subject,
+.message {
   height: 65px;
   border-radius: 10px;
-  border:none;
+  border: none;
 }
-.username,.useremail, .userphone, .subject {
+.username,
+.useremail,
+.userphone,
+.subject {
   width: 100%;
   margin: 5px 0;
   margin-right: 10px;
 }
-.request .container .row .coin .row-coin img{
+.request .container .row .coin .row-coin img {
   /* border: 1px solid blue; */
   width: 350px;
 }
-.request .container .row .coin .row-coin{
- /* padding: 56px; */
- margin-top: 90px;
+.request .container .row .coin .row-coin {
+  /* padding: 56px; */
+  margin-top: 90px;
 }
-.request .container .row .form .button{
+.request .container .row .form .button {
   margin-left: 20px;
   display: flex;
   justify-content: left;
   align-items: center;
 }
-.request .container .row .form .button a{
+.request .container .row .form .button a {
   width: 35%;
   height: auto;
   float: left;
@@ -603,14 +639,14 @@ figure{
   border-radius: 5px;
   text-align: center;
 }
-.request .container .row .form .button a:hover{
+.request .container .row .form .button a:hover {
   background-color: #fefefd;
   color: #252525;
   font-family: "poppins";
 }
 
 /* ************************* Client feedback info ******************************/
-.client .container .row .heading{
+.client .container .row .heading {
   width: 100%;
   display: flex;
   width: 100%;
@@ -620,14 +656,14 @@ figure{
   align-items: center;
 }
 
-.client .container .row .heading h2{
+.client .container .row .heading h2 {
   font-family: "Poppins";
   font-size: 40px;
   font-weight: 800;
   text-transform: capitalize;
   margin: 0 20px;
 }
-.client .container .row .heading p{
+.client .container .row .heading p {
   font-family: "Poppins";
 }
 .client .container .row {
@@ -635,31 +671,30 @@ figure{
   justify-content: center;
   align-items: center;
 }
-.client .container .row .client-info{
+.client .container .row .client-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.client .container .row .client-info h3{
+.client .container .row .client-info h3 {
   font-family: "Poppins";
   font-size: 20px;
 }
-.client .container .row .client-info p{
+.client .container .row .client-info p {
   font-family: "Poppins";
   text-align: center;
   margin: 10px 0;
   width: 975px;
   font-size: 17px;
-
 }
-.client .container .row .dots{
+.client .container .row .dots {
   margin: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.client .container .row .dots hr{
+.client .container .row .dots hr {
   height: 20px;
   width: 20px;
   background: #02a763;
@@ -667,35 +702,35 @@ figure{
   border-radius: 50%;
   margin: 0 3px;
 }
-.client .container .row .dots #dot_e{
+.client .container .row .dots #dot_e {
   background: #252525;
 }
 
 /* ****************************** Footer ********************************* */
-.footer{
+.footer {
   background: #252525;
 }
-.footer .container .row{
+.footer .container .row {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-.footer .container .row .col{
+.footer .container .row .col {
   margin: 0 10px;
   color: #ffffff;
   font-family: "poppins";
 }
-.footer .container .row .col .footer_menu_text{
+.footer .container .row .col .footer_menu_text {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   width: 100%;
   margin-bottom: 15px;
 }
-.footer .container .row .col .footer_menu{
+.footer .container .row .col .footer_menu {
   width: 100%;
 }
-.footer .container .row .col .footer_menu ul li{
+.footer .container .row .col .footer_menu ul li {
   font-size: 16px;
 }
 .footer .container .row .col .footer_menu ul li a {
@@ -703,13 +738,13 @@ figure{
   color: #ffffff;
   margin-bottom: 20px;
 }
-.footer .container .row .col .footer_menu ul li a:hover{
+.footer .container .row .col .footer_menu ul li a:hover {
   color: #02a763;
 }
-.footer .container .row .col .form_group{
+.footer .container .row .col .form_group {
   margin-bottom: 1rem;
 }
-.footer .container .row .col .form_group .update_mail{
+.footer .container .row .col .form_group .update_mail {
   width: 100%;
   color: #3b3b3b;
   height: 55px;
@@ -721,12 +756,12 @@ figure{
   margin-top: 20px;
   border: 0px;
 }
-.footer .container .row .col .form_group .form_bt{
+.footer .container .row .col .form_group .form_bt {
   width: 70px;
   float: left;
   padding-top: 30px;
 }
-.footer .container .row .col .form_group .form_bt a{
+.footer .container .row .col .form_group .form_bt a {
   width: 100%;
   float: left;
   color: #ffffff;
@@ -735,5 +770,54 @@ figure{
   background-color: #02a763;
   text-align: center;
   text-transform: uppercase;
-
+}
+.footer .container .row .col .footer_menu {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+/* .footer_menu_icon ul{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.footer_menu_icon ul li{
+  float: left;
+  list-style: none;
+  font-size: 16px;
+} */
+.footer_menu_icon ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer_menu_icon ul li {
+  background: #ffffff;
+  color: #252525;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  background: #02a763;
+  width: 100%;
+  height: 65px;
+}
+.copyright .text_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+.copyright .text_copyright h3 {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "poppins";
+  color: #ffffff;
+  font-weight: 400;
 }
