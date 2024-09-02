@@ -74,7 +74,9 @@ a {
   z-index: 100;
   /* border: 1px solid red; */
 }
-
+.bg{
+  background-color: #3b3b3b;
+}
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -708,45 +710,45 @@ figure {
   background: #252525;
 }
 
-/* ****************************** Footer ********************************* */
-.footer {
+/* ****************************** company ********************************* */
+.company {
   background: #252525;
 }
-.footer .container .row {
+.company .container .row {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-.footer .container .row .col {
+.company .container .row .col {
   margin: 0 10px;
   color: #ffffff;
   font-family: "poppins";
 }
-.footer .container .row .col .footer_menu_text {
+.company .container .row .col .footer_menu_text {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   width: 100%;
   margin-bottom: 15px;
 }
-.footer .container .row .col .footer_menu {
+.company .container .row .col .footer_menu {
   width: 100%;
 }
-.footer .container .row .col .footer_menu ul li {
+.company .container .row .col .footer_menu ul li {
   font-size: 16px;
 }
-.footer .container .row .col .footer_menu ul li a {
+.company .container .row .col .footer_menu ul li a {
   /* text-decoration: none; */
   color: #ffffff;
   margin-bottom: 20px;
 }
-.footer .container .row .col .footer_menu ul li a:hover {
+.company .container .row .col .footer_menu ul li a:hover {
   color: #02a763;
 }
-.footer .container .row .col .form_group {
+.company .container .row .col .form_group {
   margin-bottom: 1rem;
 }
-.footer .container .row .col .form_group .update_mail {
+.company .container .row .col .form_group .update_mail {
   width: 100%;
   color: #3b3b3b;
   height: 55px;
@@ -758,12 +760,12 @@ figure {
   margin-top: 20px;
   border: 0px;
 }
-.footer .container .row .col .form_group .form_bt {
+.company .container .row .col .form_group .form_bt {
   width: 70px;
   float: left;
   padding-top: 30px;
 }
-.footer .container .row .col .form_group .form_bt a {
+.company .container .row .col .form_group .form_bt a {
   width: 100%;
   float: left;
   color: #ffffff;
@@ -773,7 +775,7 @@ figure {
   text-align: center;
   text-transform: uppercase;
 }
-.footer .container .row .col .footer_menu {
+.company .container .row .col .footer_menu {
   width: 100%;
   float: left;
   margin-top: 20px;

@@ -365,8 +365,8 @@
                                     </div>
                                 </div>
                               </section>
-            <!-- ****************************** Footer section ******************************** -->
-                            <section class="footer">
+            <!-- ****************************** Company section ******************************** -->
+                            <section class="company">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col">
@@ -425,12 +425,25 @@
                                     </div>
                                 </div>
                             </section>
-                            <div class="copyright">
-                                <div class="text_copyright">
-                                    <h3>2020 All Rights Reserved. Design by Free Html Templates</h3>
-                                </div>
-                            </div>
     </main>
+    <!-- *********************************** Footer Section **************************************** -->
+    <footer>
+        <div class="copyright">
+            <div class="text_copyright">
+                <h3>2020 All Rights Reserved. Design by Free Html Templates</h3>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $("nav").toggleClass("bg",$(this).scrollTop() >200);
+            });
+        });
+    </script>
 </body>
 
 </html>
