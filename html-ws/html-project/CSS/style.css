@@ -319,7 +319,7 @@ figure {
   margin: 18px;
   background: #dddada;
   font-family: "Poppins", sans-serif;
-  transition: all ease 1s;
+  /* transition: all ease 1s; */
   /* font-size: 20px; */
 }
 .about .container .row .work-element .serv-card:hover {
@@ -600,8 +600,10 @@ figure {
 .subject,
 .message {
   height: 65px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
+  font-size: 16px;
+  padding: 0 10px;
 }
 .username,
 .useremail,
