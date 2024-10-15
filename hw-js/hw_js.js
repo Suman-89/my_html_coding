@@ -1,4 +1,4 @@
-let numArr = [2,3,4,5,6,7,8,9];
+let numArr = [2,3,4,5,3,7,5,9];
 
 function doubleArray(arr){
     let newArr = [];
@@ -55,10 +55,21 @@ function descendingSort(arr){
 // console.log('Descending order -->',descendingSort(numArr));
 
 function remDup(arr){
-    for(let p in arr){
-        if(arr[p]){
-            return arr.filter(arr[p]);
-        }
-    }
+   return arr.filter((value,index) => arr.indexOf(value) == index);
+// return arr.filter((value,index) => console.log( arr.indexOf(value)));
+
 }
-console.log('remDup -->',remDup(numArr));
+// console.log('Original Array -->', numArr);
+// console.log('remDup -->',remDup(numArr));
+// remDup(numArr);
+
+function avgNumber(...nums){
+    let total = nums.reduce((acc,value) => acc + value,0);
+    return total / nums.length;
+}
+function mxNumber(...nums){
+    return nums.reduce((a,v)=>Math.max(a,v));
+}
+// console.log(avgNumber(1,3,5,7,9));
+console.log(mxNumber(1,3,5,7,9));
+// mxNumber(1,3,5,7,9);
