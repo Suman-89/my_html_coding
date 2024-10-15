@@ -43,4 +43,22 @@ function isPrime(num){
 function primeArray(arr){
     return arr.filter(isPrime);
 }
-console.log(primeArray(numArr));
+// console.log(primeArray(numArr));
+
+function ascendingSort(arr){
+    return arr.sort((a,b) => a - b);
+}
+function descendingSort(arr){
+    return arr.sort((a,b) => b - a);
+}
+// console.log('Ascending order --> ',ascendingSort(numArr));
+// console.log('Descending order -->',descendingSort(numArr));
+
+function remDup(arr){
+    for(let p in arr){
+        if(arr[p]){
+            return arr.filter(arr[p]);
+        }
+    }
+}
+console.log('remDup -->',remDup(numArr));
