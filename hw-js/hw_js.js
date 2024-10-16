@@ -71,5 +71,35 @@ function mxNumber(...nums){
     return nums.reduce((a,v)=>Math.max(a,v));
 }
 // console.log(avgNumber(1,3,5,7,9));
-console.log(mxNumber(1,3,5,7,9));
+// console.log(mxNumber(1,3,5,7,9));
 // mxNumber(1,3,5,7,9);
+
+// 12
+function createArray(...params){
+    let arrNew = [];
+    for(let i in params){
+        if(params[i].length >= 4){
+            arrNew.push(params[i]);
+        }
+    }
+    return arrNew;
+}
+// console.log(createArray('suman','adi','serr','sdfrty'));
+
+// 13
+let arrObj = [
+    {name:'Suman'},
+    {name:'Aditya'},
+    {name:'Shree'}
+]
+function updateArray(arr) {
+    return arr.map((v)=> {
+        if(v.name == 'Suman'){
+            v.name = 'Ram';
+        }
+        return v;
+    });
+}
+// updateArray(arrObj);
+console.log('Original Array -->',arrObj);
+console.log('Updated Array -->',updateArray(arrObj));
